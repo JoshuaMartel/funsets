@@ -157,6 +157,7 @@ class FunSetSuite extends munit.FunSuite {
     }
   }
 
+
   test("test various functions for map"){
     new TestSets {
       val f1: Int => Int = x => x * 2
