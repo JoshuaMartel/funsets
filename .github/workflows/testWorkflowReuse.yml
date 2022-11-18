@@ -11,10 +11,10 @@ jobs:
   sonarcloud:
     runs-on: ubuntu-latest
     steps:
-    - uses: sonarscanner@v1
+    - uses: joshuamartel/ScalaSonarTest/.github/workflows/sonarscanner@master
       with: 
         organization: joshuamartel
-        project_Key: ScalaSonarCloud
+        project_Key: ScalaSonarTest
         sonar_token: ${{ secrets.GITHUB_TOKEN }}
 
       
