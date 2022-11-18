@@ -13,6 +13,6 @@ jobs:
     with: 
       organization: joshuamartel
       project_Key: ScalaSonarTest
-      sonar_token: ${{ secrets.SONAR_TOKEN }}
+      token_sonar: ${{ secrets.SONAR_TOKEN }}
 
     
