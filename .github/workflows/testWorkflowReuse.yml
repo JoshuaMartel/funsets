@@ -15,4 +15,4 @@ jobs:
       project_Key: ScalaSonarTest
       sonar_token: ${{ secrets.GITHUB_TOKEN }}
 
-      
+    
