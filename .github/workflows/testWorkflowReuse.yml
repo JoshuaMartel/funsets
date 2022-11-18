@@ -9,7 +9,7 @@ on:
 name: Main Workflow
 jobs:
   sonarcloud:
-    uses: joshuamartel/ScalaSonarTest/.github/workflows/sonarscanner@master
+    uses: joshuamartel/ScalaSonarTest/.github/workflows/sonarscanner.yml@master
     with: 
       organization: joshuamartel
       project_Key: ScalaSonarTest
