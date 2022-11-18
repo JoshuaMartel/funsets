@@ -9,12 +9,10 @@ on:
 name: Main Workflow
 jobs:
   sonarcloud:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: joshuamartel/ScalaSonarTest/.github/workflows/sonarscanner@master
-      with: 
-        organization: joshuamartel
-        project_Key: ScalaSonarTest
-        sonar_token: ${{ secrets.GITHUB_TOKEN }}
+    uses: joshuamartel/ScalaSonarTest/.github/workflows/sonarscanner@master
+    with: 
+      organization: joshuamartel
+      project_Key: ScalaSonarTest
+      sonar_token: ${{ secrets.GITHUB_TOKEN }}
 
       
