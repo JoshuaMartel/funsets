@@ -1,0 +1,20 @@
+on:
+  # Trigger analysis when pushing in master or pull requests, and when creating
+  # a pull request.
+  push:
+    branches:
+      - master
+  pull_request:
+      types: [opened, synchronize, reopened]
+name: Main Workflow
+jobs:
+  sonarcloud:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: sonarscanner@v1
+      with: 
+        organization: joshuamartel
+        project_Key: ScalaSonarCloud
+        sonar_token: ${{ secrets.GITHUB_TOKEN }}
+
+      
