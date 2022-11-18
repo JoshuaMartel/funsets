@@ -12,7 +12,7 @@ jobs:
     uses: joshuamartel/ScalaSonarTest/.github/workflows/sonarscanner.yml@master
     with: 
       organization: joshuamartel
-      project_Key: ScalaSonarTest
+      project_Key: funsets
     secrets:
       token_sonar: secrets.SONAR_TOKEN
 
