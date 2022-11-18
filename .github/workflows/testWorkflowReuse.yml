@@ -16,4 +16,3 @@ jobs:
     secrets:
       token_sonar: secrets.SONAR_TOKEN
 
-    
